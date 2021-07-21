@@ -27,7 +27,7 @@ struct Trie {
         val[u]++;
     }
 };
-//ac×Ô¶¯»ú
+//acÃ—Ã”Â¶Â¯Â»Ãº
 int last[maxn], f[maxn];
 void print(int j) {
 	if(j && !vis[j]) {
@@ -35,7 +35,7 @@ void print(int j) {
 		print(last[j]);
 	}
 }
-int getFail() {
+void getFail() {
 	queue<int> q;
 	f[0] = 0;
 	for(int c = 0; c < SIGMA_SIZE; c++) {
